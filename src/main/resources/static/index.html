@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Spring Boot + Jasper Reports</title>
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+			rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<body>
+	
+		<div class="container">
+			<section class="header">
+				<h1>Spring Boot + Jasper Reports</h1>
+			</section>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="one-half column" style="margin-top: 5%; margin-bottom: 2%">
+					<h5>Impressão por método POST</h5>
+					<p>
+						Enviei parâmetros para o relatório<br />Parâmetros não
+						obrigatórios.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="eleven column">
+					<form action="/relatorio" method="POST" target="_blank">
+					
+						<div class="row">
+							<div class="six columns">
+								<label for="marca">Marca</label>
+								
+								<select class="u-full-width" id="marca" name="marca">
+									<option value="">Selecione</option>
+									<option value="CHEVROLET">Chevrolet</option>
+									<option value="FIAT">Fiat</option>
+									<option value="FORD">Ford</option>
+								</select>
+							</div>
+							
+							<div class="six columns">
+								<label for="status">Status</label>
+								
+								<select class="u-full-width" id="status" name="status">
+									<option value="">Selecione</option>
+									<option value="ALUGAR">Alugar</option>
+									<option value="ALUGADO">Alugado</option>
+									<option value="VENDER">Vender</option>
+									<option value="VENDIDO">Vendido</option>
+								</select>
+							</div>
+						</div>
+						
+						<input class="button-primary" type="submit" value="Imprimir">
+					</form>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
